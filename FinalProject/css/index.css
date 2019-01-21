@@ -1,0 +1,245 @@
+/* Screen Settings */
+
+* {
+    box-sizing:border-box;
+}
+
+@media only screen and (min-width: 600px) {
+        .col-m-1 {width: 8.33%;}
+        .col-m-2 {width: 16.66%;}
+        .col-m-3 {width: 25%;}
+        .col-m-4 {width: 33.33%;}
+        .col-m-5 {width: 41.66%;}
+        .col-m-6 {width: 50%;}
+        .col-m-7 {width: 58.33%;}
+        .col-m-8 {width: 66.66%;}
+        .col-m-9 {width: 75%;}
+        .col-m-10 {width: 83.33%;}
+        .col-m-11 {width: 91.66%;}
+        .col-m-12 {width: 100%;}
+    }
+@media only screen and (min-width: 768px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+
+    /* Fonts */
+
+    @font-face{
+        font-family:Hierarchy;
+        src:url(../fonts/Heirarchy.ttf);
+    }
+    @font-face{
+        font-family:Masari;
+        src:url(../fonts/Masari.ttf);
+    }
+    @font-face{
+        font-family:Novus;
+        src:url(../fonts/NOVFONT.ttf);
+    }
+    @font-face{
+        font-family:Orbitron;
+        src:url(../fonts/orbitron-medium.otf);
+    }
+
+    /* Navigation */ 
+
+    nav {
+        margin-left:20%;
+        margin-right:1%;
+        margin-top:0%;
+        font-size: 0.5em;
+        letter-spacing: 1em;
+        display:inline-table;
+    }	
+    
+    nav ul li {
+        display:inline-table;
+        font-family: Orbitron, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    nav ul li:hover {
+        /*background: radial-gradient(snow, red);*/
+        border-radius: 8px;
+        
+    }
+    nav ul li a {
+        display: block; 
+        padding: 5px 10px;
+        color:silver; 
+        text-decoration: none;
+        transition-duration: 2s;
+        
+    }
+    nav ul li:hover a {
+        color:white; 
+        text-decoration: none;
+        transition-duration: 1s;
+    }
+    nav ul li:hover > ul {
+        display:flex;
+        flex-direction:column;
+        transition-duration: 2s;
+    }
+    nav ul ul {
+        display: none;
+        background: radial-gradient(black,darkslategray);
+        border-radius: 0px; 
+        padding: 0px;
+        position: absolute; 
+        z-index:10; 
+       
+    }
+    nav ul ul li {
+        display:block;
+        position: relative;
+        text-align:left;
+    }
+    nav ul ul li a {
+        padding: 15px 40px;
+        color: #757575;
+    } 
+    nav ul ul li a:hover {
+        background-color:black;
+        color:silver;
+        transition-duration: 2s;
+    }
+
+    a:link, A:visited{
+        color:silver;
+    }
+
+    a:active{
+        color:red;
+    }
+
+    a:hover{
+        color:white;
+    }
+
+
+    #Hierarchy:hover{
+        font-family: Hierarchy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /*background-color: maroon;*/
+        color: red;
+        font-size:1.1em;
+        transition-duration: 2s;
+    }
+    #Novus:hover{
+        font-family: Novus, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       /* background-color: slategray; */
+        color: lightcyan;
+        font-size:1.5em;
+        transition-duration: 2s;
+    }
+    #Masari:hover{
+        font-family: Masari, Cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /*background-color: darkolivegreen; */
+        color: yellowgreen;
+        font-size:1.5em;
+        transition-duration: 2s;
+    }
+    
+    #HierarchyHeader{
+        font-family: Hierarchy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: maroon;
+        color: red;
+    }
+    #NovusHeader{
+        font-family: Novus, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: slateblue;
+        color: lightcyan;
+    }
+    #MasariHeader{
+        font-family: Masari, Cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: darkolivegreen;
+        color: yellowgreen;
+    }
+    header{
+        background: linear-gradient(0deg,slategray,black, slategray);
+        border: 2px solid silver;
+       }
+       
+    img{
+        width:50%;
+        height:50%;
+    }
+    p{
+        margin:auto;
+        padding:1% 1%;
+        background-color: darkslategray;
+        opacity: .78;
+
+    }
+    body{
+      font-family: Orbitron, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1em;
+      text-align: center;  
+      margin: auto;
+    } 
+
+    section{
+
+        margin-left:10%
+
+    }
+    article{
+        background-color: slategray;
+        color: gold;
+        text-shadow: 1px 1px black;
+        border-radius: 5%;
+        opacity: 0.85;
+        margin: auto;
+    }
+
+    article h2{
+        font-size: 1.5em;
+        letter-spacing: 0.5em;
+        padding:1%;
+    }
+
+    footer{
+        margin-top:100%;
+        font-size: 0.75em;
+        letter-spacing: 0.5em;
+        color:silver;
+        background-color:black;
+    }
+
+    button {
+
+        background-color: black;
+        color: darkslateblue;
+        border: 2px solid darkslateblue;
+        border-radius: 5%;
+        padding: 1%;
+    }
+        .icons{
+            background-color:black;
+            border: 2px solid silver;
+            border-radius: 50px;
+            text-align: center;
+        }
+      .icons a{
+              display:inline;
+              align-content:center;
+              text-align:center;
+              text-decoration: none;
+              padding-left:12px,0;
+              transition: all 01s ease;
+              color:snow;
+          }
+      .icons a:hover{
+          color:gold;
+          background-color:darkgrey;
+          text-decoration: none;
+      }

@@ -1,0 +1,204 @@
+/* Print Settings */
+
+*{
+    width:100%;
+    font-size:12pt;
+    font-family:sans-serif;
+    background:white;
+    color:black;
+    border-color:black;
+    text-align:left;
+    margin:0px;
+    padding:0px;
+    display:block;
+    top:0%;
+    height:auto;
+    opacity:1;
+    border:none;
+    text-shadow:none;
+    font-weight:normal;
+    width:100%;
+     
+}
+    /* Fonts */
+
+    @font-face{
+        font-family:Hierarchy;
+        src:url(../fonts/Heirarchy.ttf);
+    }
+    @font-face{
+        font-family:Masari;
+        src:url(../fonts/Masari.ttf);
+    }
+    @font-face{
+        font-family:Novus;
+        src:url(../fonts/NOVFONT.ttf);
+    }
+    @font-face{
+        font-family:Orbitron;
+        src:url(../fonts/orbitron-medium.otf);
+    }
+
+    /* Navigation */ 
+
+    nav {
+        margin-left:20%;
+        margin-right:1%;
+        margin-top:0%;
+        font-size: 0.5em;
+        letter-spacing: 1em;
+        display:inline-table;
+    }	
+    
+    nav ul li {
+        display:inline-table;
+        font-family: Orbitron, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    nav ul li:hover {
+        background: none;
+        border-radius: 8px;
+        
+    }
+    nav ul li a {
+        display: block; 
+        padding: 5px 10px;
+        color:black;
+        text-decoration: none;
+        transition-duration: 2s;
+        
+    }
+    nav ul li:hover a {
+        color:silver; 
+        text-decoration: none;
+        transition-duration: 2s;
+    }
+    nav ul li:hover > ul {
+        display:flex;
+        flex-direction:column;
+        transition-duration: 2s;
+    }
+    nav ul ul {
+        display: none;
+        background: none;
+        border-radius: 0px; 
+        padding: 0px;
+        position: absolute; 
+        z-index:10; 
+       
+    }
+    nav ul ul li {
+        display:block;
+        position: relative;
+        text-align:left;
+    }
+    nav ul ul li a {
+        padding: 15px 40px;
+        color:black;
+    } 
+    nav ul ul li a:hover {
+        background-color:white;
+        color:black;
+        transition-duration: 2s;
+    }
+    img{ 
+        display:none;
+    }
+script, style,title, header, buttons, #previous, #next, #noprint {
+    display:none
+}
+    #Hierarchy:hover{
+        font-family: Hierarchy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /*background-color: maroon;*/
+        color: black;
+        transition-duration: 2s;
+    }
+    #Novus:hover{
+        font-family: Novus, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       /* background-color: slategray; */
+        color: black;
+        transition-duration: 2s;
+    }
+    #Masari:hover{
+        font-family: Masari, Cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /*background-color: darkolivegreen; */
+        color: black;
+        transition-duration: 2s;
+    }
+    
+    #HierarchyHeader{
+        font-family: Hierarchy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: none;
+        color: black;
+    }
+    #NovusHeader{
+        font-family: Novus, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: none;
+        color: black;
+    }
+    #MasariHeader{
+        font-family: Masari, Cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: none;
+        color: black;
+    }
+       
+    img{
+        width:50%;
+        height:50%;
+    }
+
+    body{
+      font-family: Orbitron, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1em;
+      text-align: center;  
+      margin: auto;
+    } 
+
+    section{
+
+        margin-left:10%
+
+    }
+    article{
+        background:none;
+        color: black;
+        border-radius: 5%;
+        opacity: 0.85;
+        margin: auto;
+    }
+
+    article h2{
+        font-size: 1.5em;
+        letter-spacing: 0.5em;
+        padding:1%;
+    }
+
+    footer{
+        margin-top:100%;
+        font-size: 0.75em;
+        letter-spacing: 0.5em;
+        color:black;
+        background:none;
+    }
+    
+footer{
+    color:black;
+    
+}
+   .icons{
+        background:none;
+        border-radius: 0px;
+        text-align: center;
+    }
+  .icons a{
+          display:inline;
+          align-content:center;
+          text-align:center;
+          text-decoration: none;
+          padding-left:12px,0;
+          transition: all 01s ease;
+          color:black;
+      }
+  .icons a:hover{
+      display:none;
+    
+  }

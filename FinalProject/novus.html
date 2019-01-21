@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Knowlege Vault</title>
+        <meta name="description" content="A fansite dedicated to the RTS game Universe at War:Earth Assault" />
+        <meta name="keywords" content="RTS, Petroglyph Games, SEGA, UaW, UaW:EA, Universe at War, Hierarchy, Novus, Masari, Real Time Stratagy, Game, Computer Game, Console Game" />
+        <link rel="stylesheet" href="css/index.css" media="ALL"/>
+        <link rel="stylesheet" href="css/Print.css" media="PRINT"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <script>
+                var Image = new Array("media/icons/novus/i_icon_ni_constructor.png" ,"media/icons/novus/i_icon_ni_ohm_robot.png","media/icons/novus/i_icon_ni_hacker.png","media/icons/novus/i_icon_ni_blade_trooper.png","media/icons/novus/i_icon_nv_variant.png","media/icons/novus/i_icon_nv_antimatter_tank.png", "media/icons/novus/i_icon_nv_amplifier.png","media/icons/novus/i_icon_nv_field_inverter.png","media/icons/novus/i_icon_nv_corruptor.png","media/icons/novus/i_icon_nv_dervish_jet.png")
+                var ImageNum=0;
+                var ImageLength =Image.length -1;
+              var Description = new Array("Constructors are tasked with both building Novus facilities and repairing damaged units. To do this, they employ tanks of construction nanites which break down and reassemble raw materials into the required shapes.","Ohm robots are the light infantry of Novus. They are often used in vast swarms and are capable of using their power cores as makeshift explosives against larger opponents.",
+              "Hackers specialize in machine warfare, being able to overwrite defensive turrents and disable the motive systems of enemy vehicles. They can also use Novus Viruses as a catalyst to do massive system damage on infected machines.","Blade Troopers are advanced robotic infantry designed specifically to counter the heavy troops of the Hierarchy. They are equipped with a multitude of advanced technologies to allow them to perform their role, ranging from visual scramblers to nanoite replicators which allow them to create short-lived clones equally capable of slicing up opponents as their parent unit.",
+              "The Varient is a light recon vehicle equipped with Mirage generators to conceal its form while stationary and anti-infantry flechette blasters for offense. They excell at ambush applications but can also be used in direct conflicts as well using their speed to avoid retaliation.",  "Antimatter tanks provide the bulk of Novus' armored companies. The anti-matter pellets they use as munitions stick to targets and explode shortly after, causing a chain reaction with any other pellets likewise attached. The tank can also vent its core at will, pelting the area with smaller pellets to diswade infantry attacks.", 
+              "Amplifers are sonic artillery, wielding a dangerous beam of concentrated sound calibrated to shatter structures and Hierarchy hardpoints. They can also release a sonic pulse if attacked in close quarters.","Field Inverters are heavy walking robots that can manipulate electromagnetic fields to either hurl nanite-based projectiles at vehicle targets or project an energy shield capable of protecting nearby units.",
+              "Corruptors are small scout drones equipped with a cutting laser and advanced sensor suite. They serve as the primary vectors for Novus computer viruses, uploading malignant code directly into targeted machines.",
+              "Dervish Jets are air superiority units designed to swat down enemy aircraft with a barrage of antimatter pellets. They pair well with antimatter tanks on ground assaults, due to the unusual properties of their weapon.")
+                var DescriptionNum=0;
+                var DescriptionLength =Description.length -1;                
+                function changeImage(number){
+                    ImageNum = ImageNum + number;
+                    if (ImageNum > ImageLength)
+                            ImageNum=0;
+                    if (ImageNum < 0)
+                            ImageNum=ImageLength;
+                    DescriptionNum = DescriptionNum + number;
+                    if (DescriptionNum > DescriptionLength)
+                            DescriptionNum=0;
+                    if (DescriptionNum < 0)
+                            DescriptionNum=DescriptionLength;    
+                 document.getElementById("desc").innerHTML = Description[DescriptionNum];
+                 document.getElementById("NovusUnits").src = Image[ImageNum];
+                return;                                   
+                }
+ 
+ 
+        </script>    
+          <style>
+
+                body{ 
+                    background-image: url("media/novus.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                article{
+                    /*background-image: url("media/novus_homeworld.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;*/
+                    color:lightcyan; 
+                    text-shadow: 1px 1px darkslateblue;
+                    background:radial-gradient(black,darkslategray);
+                }
+                </style>
+    </head>
+<body>
+    <header class="col-12 col-m-12">
+            <img class="col-6 col-m-6" src="media/UAW_logo.png">
+             <nav class="col-6 col-m-6">
+                <ul> 
+                <li><a href=../FinalProject/index.html>Home</a></li>
+                <li><a href=#>Factions</a>
+                <ul>
+                    <li><a id=Hierarchy href=../FinalProject/hierarchy.html>Hierarchy</a></li>
+                    <li><a id=Novus href=../FinalProject/novus.html>Novus</a></li>
+                    <li><a id=Masari href=../FinalProject/masari.html>Masari</a></li>
+                </ul>
+                </li>
+                <li><a href=#>Media</a></li>
+                <li><a href="http://universeatwar.wikia.com/wiki/Main_Page">Wiki</a></li>
+                </ul>
+           </nav>
+    </header>
+   <section class="col-9 col-m-12">
+        <article style="background-image: none; background:radial-gradient(black,darkslategray);">
+                <div class="col6 col-m-12" >
+                    <h2 id="NovusHeader">Novus</h2>
+                    <img class="col-2 col-m-2" src="media/N_Logo_CB.png">
+                    <h3><em>"We are Novus. We are enemies of your oppressors, the Hierarchy."</em></h3><br/>
+                    <p>The original creators of what would become Novus were all but wiped out during a Hierarchy invasion, leaving behind a handful of sapient machines to rebuild. Since then Novus has been 
+                        a constant thorn in the side of the Hierarchy, leading to the events of <em>Universe at War: Earth Assault</em> where they find things strangly amiss... Novus is lead by the Founder (the original surviving intelligence), Vertigo, and Mirable who stands out as the lone organic among an army of machines.
+                    </p>
+                </div>
+        </article>
+
+        <article>
+            <h2 id="NovusHeader">Units</h2>
+            <h3>Novus favors hit-and-run tactics which is reflected in their unit pools. Novus units tend to be faster and frailer than their counterparts in the other factions, but thanks to their robotic nature can rapidly be constructed in the field.</h3><br/>
+
+                <div class="col-12 col-m-12" >	
+                        <p style="width:20%;margin-left:40%;background:none;"><img alt="Novus Units" id="NovusUnits" src="media/icons/novus/i_icon_logo_novus.png" style="max-width:150%; min-width:200px; height:auto;padding:10%;"></p>
+                </div>
+                <div class="col-12 col-m-12" style="color:lightcyan; text-shadow: 1px 1px darkslategray;">	
+                     <p id="desc">Click below to see Novus units:</p>
+                </div>
+                <div  class="col-12 col-m-12"> 
+                        <button type="button" id="previous" style="display:inline-block;margin-right:10%;" onclick="changeImage(-1)">Previous</button>
+                        <button type="button" id="next" onclick="changeImage(1)">Next</button>
+                </div>        
+                </article>	
+
+   </section>
+    <footer class="col-12 col-m-12"> 
+        <div class=icons>
+            <a href="https://www.facebook.com/petroglyphgames"><i class="fab fa-facebook-square"></i> Petroglyph Games</a>
+            <a href="https://www.facebook.com/SEGA"><i class="fab fa-facebook-square"></i> SEGA</a><br/>
+            <small>Logos, <em>Universe at War</em> and related content &copy; their respective owners. Site Layout &copy; Jim Lyons, 2018-2019.</small>
+        </div>    
+        </footer>
+</body>
+       </html>

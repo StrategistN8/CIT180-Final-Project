@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Knowlege Vault</title>
+        <meta name="description" content="A fansite dedicated to the RTS game Universe at War:Earth Assault" />
+        <meta name="keywords" content="RTS, Petroglyph Games, SEGA, UaW, UaW:EA, Universe at War, Hierarchy, Novus, Masari, Real Time Stratagy, Game, Computer Game, Console Game" />
+        <link rel="stylesheet" href="css/index.css" media="ALL"/>
+        <link rel="stylesheet" href="css/Print.css" media="PRINT"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <script>
+                var Image = new Array("media/icons/masari/i_icon_mi_architect.png","media/icons/masari/i_icon_mi_avenger.png","media/icons/masari/i_icon_mi_disciple.png","media/icons/masari/i_icon_mi_seer.png","media/icons/masari/i_icon_mv_sentry.png","media/icons/masari/i_icon_mv_figment.png","media/icons/masari/i_icon_mv_enforcer.png", "media/icons/masari/i_icon_mv_peacemaker.png","media/icons/masari/i_icon_mv_seeker.png","media/icons/masari/i_icon_mv_sky_lord.png")
+                var ImageNum=0;
+                var ImageLength =Image.length -1;
+              var Description = new Array("Wielding the energies of creation, Architects bring forth Masri structures and can repair damage. They can also be tasked to structures to improve production times or enhance defensive turrets.","Avengers are Masari pilots. Whenever a Masari vehicle is destroyed, its Avenger will be seen climbing out of the wreckage to continue the fight.",
+              "Disciples are the mainline soldiers of the Masari. They carry an Energy Reflex Cannon effective against vehicles and larger targets, but inaccuate against opposing infantry.","Seers scry the landscape for hidden units and purge negative effects from nearby friendly units. Seers can also mark an object with their staff to reveal its position from across the battlefield.",
+              "Sentries are the lightest of the Masari chariots, featuring a laser weapon while in light mode and a rapid fire energy cannon in dark. They also can transport a single Masari soldier on their platform to allow for greater mobility.",  "Figments are lightly armed stealth vehicles designed for minelaying. They are effective at dispatching infantry and their mines are highly useful against Hierarchy walkers.", "Conquerors are the armored fist of the Masari, being both sturdy and flexible vehicles. Their slow firing energy cannon is effective against most targets and the Conqueror can vent a wirwind of energy for crowd control.", 
+              "The mighty Peacebringer bristles with weaponry and heavy armor. It features a battery of 3 heavy energy cannons and a dark energy beam capable of snaring targets.","Inquistors excemplify the duel-nature of the Masari. While in dark mode they serve as heavy infantry, but upon switching to light they take to the skies. Inquistors can be upgraded with an assortment of abilities through research, making them quite flexible.",
+              "The Sky Lord is an mobile siege unit that takes the form of a bomber while in light mode and a medium walker in dark. The Sky Lord's cannon fires either three large fireballs that explode on impact or snaking tendrils of dark energy that knock foes away on impact.")
+                var DescriptionNum=0;
+                var DescriptionLength =Description.length -1;                
+                function changeImage(number){
+                    ImageNum = ImageNum + number;
+                    if (ImageNum > ImageLength)
+                            ImageNum=0;
+                    if (ImageNum < 0)
+                            ImageNum=ImageLength;
+                    DescriptionNum = DescriptionNum + number;
+                    if (DescriptionNum > DescriptionLength)
+                            DescriptionNum=0;
+                    if (DescriptionNum < 0)
+                            DescriptionNum=DescriptionLength;    
+                 document.getElementById("desc").innerHTML = Description[DescriptionNum];
+                 document.getElementById("MasariUnits").src = Image[ImageNum];
+                return;                                   
+                }
+ 
+ 
+        </script>    
+          <style>
+
+                body{ 
+                    background-image: url("media/masari_interior.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                article{
+                    color:yellowgreen; 
+                    text-shadow: 1px 1px darkolivegreen;
+                    background:radial-gradient(black,darkslategray);
+                }
+                </style>
+    </head>
+<body>
+    <header class="col-12 col-m-12">
+            <img class="col-6 col-m-6" src="media/UAW_logo.png">
+             <nav class="col-6 col-m-6">
+                <ul> 
+                <li><a href=../FinalProject/index.html>Home</a></li>
+                <li><a href=#>Factions</a>
+                <ul>
+                    <li><a id=Hierarchy href=../FinalProject/hierarchy.html>Hierarchy</a></li>
+                    <li><a id=Novus href=../FinalProject/novus.html>Novus</a></li>
+                    <li><a id=Masari href=../FinalProject/masari.html>Masari</a></li>
+                </ul>
+                </li>
+                <li><a href=#>Media</a></li>
+                <li><a href="http://universeatwar.wikia.com/wiki/Main_Page">Wiki</a></li>
+                </ul>
+           </nav>
+    </header>
+   <section class="col-9 col-m-12">
+        <article>
+                <div class="col6 col-m-12" >
+                    <h2 id="MasariHeader">Masari</h2>
+                    <img class="col-2 col-m-2" src="media/M_Logo_C.png">
+                    <h3><em>"We are gods once more!"</em></h3><br/>
+                    <p> Having mastered the arts of energy and matter, the Masari at one point dominated the galaxy before being brought low by the forbearers of the Hierarchy in a devestating rebellion.
+                        One Masari city-ship fled to earth during the war and the survivors intergrated themselves into human culture before retreating beneath the ocean and fading into myth. The events of <em>Universe at War: Earth Assault</em> eventually result 
+                        in the Masari awakening from their stasis and emerging to do battle with their ancient foe. 
+                    </p>
+                </div>
+        </article>
+
+        <article>
+            <h2 id="MasariHeader">Units</h2>
+            <h3>The Masari's duel nature allows their units to switch between an offensive and defensive stance at a moment's notice. While in dark mode units fire more rapidly but inflict less damage in exchange for an encompassing shield of dark matter armor. In light mode any accumulated armor is shed but units gain improved vision range and fire much more powerful shots.</h3><br/>
+
+                <div class="col-12 col-m-12" >	
+                        <p style="width:20%;margin-left:40%; background:none;"><img alt="Masari Units" id="MasariUnits" src="media/icons/masari/i_icon_logo_Masari.png" style="max-width:150%; min-width:200px; height:auto;padding:10%;"></p>
+                </div>
+                <div class="col-12 col-m-12">	
+                     <p id="desc">Click below to see Masari units:</p>
+                </div>
+                <div  class="col-12 col-m-12"> 
+                        <button type="button" id="previous" style="display:inline-block;margin-right:10%;" onclick="changeImage(-1)">Previous</button>
+                        <button type="button" id="next" onclick="changeImage(1)">Next</button>
+                </div>        
+                </article>	
+   </section>
+    <footer class="col-12 col-m-12"> 
+        <div class=icons>
+            <a href="https://www.facebook.com/petroglyphgames"><i class="fab fa-facebook-square"></i> Petroglyph Games</a>
+            <a href="https://www.facebook.com/SEGA"><i class="fab fa-facebook-square"></i> SEGA</a><br/>
+            <small>Logos, <em>Universe at War</em> and related content &copy; their respective owners. Site Layout &copy; Jim Lyons, 2018-2019.</small>
+        </div>    
+        </footer>
+    </body>
+       </html>

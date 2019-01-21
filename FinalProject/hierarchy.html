@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Knowlege Vault</title>
+        <meta name="description" content="A fansite dedicated to the RTS game Universe at War:Earth Assault" />
+        <meta name="keywords" content="RTS, Petroglyph Games, SEGA, UaW, UaW:EA, Universe at War, Hierarchy, Novus, Masari, Real Time Stratagy, Game, Computer Game, Console Game" />
+        <link rel="stylesheet" href="css/index.css" media="ALL"/>
+        <link rel="stylesheet" href="css/Print.css" media="PRINT"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <script>
+                var Image = new Array("media/icons/hierarchy/i_icon_ab_assembly_walker.png","media/icons/hierarchy/i_icon_av_defiler.png","media/icons/hierarchy/i_icon_av_phase_tank.png","media/icons/hierarchy/i_icon_av_saucer.png","media/icons/hierarchy/i_icon_av_monolith.png", "media/icons/hierarchy/i_icon_ab_habitat_walker.png","media/icons/hierarchy/i_icon_ai_grunt.png",
+                "media/icons/hierarchy/i_icon_ai_lost_ones.png", "media/icons/hierarchy/i_icon_ai_brute.png","media/icons/hierarchy/i_icon_ab_science_walker.png","media/icons/hierarchy/i_icon_ab_reaper_drone.png", "media/icons/hierarchy/i_icon_ab_scan_drone.png","media/icons/hierarchy/i_icon_ab_purifier.png")
+                var ImageNum=0;
+                var ImageLength =Image.length -1;
+              var Description = new Array("The Assembly Walker serves as the primary vehicle production center for the Hierarchy army. It houses a battery of plasma cannons on its upper torso and can equip a variety of new weaponry or augmentations via its hardpoint moduals.","Defilers specialize in area control, using irradiated plasma to attack ground targets and mutate organics. Their sweeping beam weapon is highly effective against structures and groups of foes, but less effective against agile enemies.","Phase Tanks are able to shift themselves out of sync with the rest of the world to bypass enemy defenses and avoid retailiation. Each is armed with a plasma cannon similar to those found on the larger walkers.","The highly flexible Saucers form the bulk of the Hierarchy airforce. Each possesses 3 docked plasma core 'foo fighters' that can be released to lach on to objects where they either conduct repairs or burn through the target.","The Monolith is an advanced scout aircraft that moves via teleportation. They attack with a radiation beam weapon that interferes with technology.", "The Habitat Walker is the Hierarchy's mobile infantry production center. It carries six plasma cannons by default and can equip additional hardpoints to enhance both offense and production capabilities.","Grunts form the mainstay of the Hierarchy army, being genetically engineered to survive in any environment. They wield plasma shotguns capable of hitting multiple foes or inflicting critical damage up close.",
+                "Hierarchy criminals turned thrall troops. Lost Ones are initially provided with a low-power plasma pistol but can be upgraded into effective commando troops with research.", "A massively mutated alien, Brutes are deadly melee-based siege troops used to smash through defensive emplacements and rapidly tear down structures.","The Science Walker is a mobile super-weapon with a selection of some of the most devious hardpoints in the Hierarchy's armory. Their core is exposed but protected by a constantly regenerating energy shield.","Reaper Drones are resource collectors for the Hierarchy faction, designed to wander the battlefield and break down whatever materials they come across with their abduction beam.", "Detection Drones provide mobile radar services and sensor systems. They are ideal for rooting out cloaked units and can perform system diagnostics with their scan-pulse ability to remove negative effects from units.","A monstrous strategic weapon, the Purifier serves as a launching pad for the Hierarchy Purification Device, a matter-to-energy warhead capable of annihlating entire regions. ")
+                var DescriptionNum=0;
+                var DescriptionLength =Description.length -1;                
+                function changeImage(number){
+                    ImageNum = ImageNum + number;
+                    if (ImageNum > ImageLength)
+                            ImageNum=0;
+                    if (ImageNum < 0)
+                            ImageNum=ImageLength;
+                    DescriptionNum = DescriptionNum + number;
+                    if (DescriptionNum > DescriptionLength)
+                            DescriptionNum=0;
+                    if (DescriptionNum < 0)
+                            DescriptionNum=DescriptionLength;    
+                 document.getElementById("desc").innerHTML = Description[DescriptionNum];
+                 document.getElementById("HierarchyUnits").src = Image[ImageNum];
+                return;                                   
+                }
+ 
+ 
+        </script>    
+        <style>
+        body{
+
+            background-image: url("media/aliens.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        
+        article{
+          /* background-image: url("media/heirarchy_int.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; */
+            background: radial-gradient(black,darkslategray);
+            color:orangered; text-shadow: 1px 1px black;
+        }
+        </style>
+
+    </head>
+<body>
+        <header class="col-12 col-m-12">
+                <img class="col-6 col-m-6" src="media/UAW_logo.png">
+                 <nav class="col-6 col-m-6">
+                    <ul> 
+                    <li><a href=../FinalProject/index.html>Home</a></li>
+                    <li><a href=#>Factions</a>
+                    <ul>
+                        <li><a id=Hierarchy href=../FinalProject/hierarchy.html>Hierarchy</a></li>
+                        <li><a id=Novus href=../FinalProject/novus.html>Novus</a></li>
+                        <li><a id=Masari href=../FinalProject/masari.html>Masari</a></li>
+                    </ul>
+                    </li>
+                    <li><a href=#>Media</a></li>
+                    <li><a href="http://universeatwar.wikia.com/wiki/Main_Page">Wiki</a></li>
+                    </ul>
+               </nav>
+        </header>
+   <section class="col-9 col-m-12">
+        <article>
+                <div class="col6 col-m-12">
+                    <h2 id="HierarchyHeader">Hierarchy</h2>
+                    <img class="col-2 col-m-2" src="media/H_Logo_C.png">
+                    <h3><em>"The universe does not abide weakness, and we are its ambassadors!"</em></h3><br/>
+                    <p>The Hierarchy are an aggressive alien race bent on galactic conquest, stripping worlds they encounter of all valuable resources before moving on. The invasion force encounted in <em>Universe at War: Earth Assault</em> consists of a task force of the 'Hierarchy Remote Mining Operations' under the leadership Kamal Rex, Orlok the Eternal, and the treacherous Nufai.</p>
+                </div>
+        </article>
+
+        <article>
+                <h2 id="HierarchyHeader">Units</h2>
+                <h3>The Hierarchy army is about as subtle as the looming walkers that head it. Most of their units put emphasis on firepower over surviability, relying on the production walkers to draw fire and provide a steady stream of reinforcements.</h3><br/>
+                <div class="col-12 col-m-12" >	
+                 <p style="width:20%;margin-left:40%;background:none;"><img alt="Hierarchy Units" id="HierarchyUnits" src="media/icons/hierarchy/i_logo_hierarchy.png" style="max-width:150%; min-width:200px; height:auto;padding:10%;"></p>
+                </div>
+                <div id="noprint" class="col-12 col-m-12" >	
+                     <p id="desc">Click below to see Hierarchy units:</p>
+                </div>
+                <div id="noprint" class="col-12 col-m-12"> 
+                        <button type="button" id="previous" style="display:inline-block;margin-right:10%;" onclick="changeImage(-1)">Previous</button>
+                        <button type="button" id="next" onclick="changeImage(1)">Next</button>
+                </div>        
+                </article>	
+
+   </section>
+    <footer class="col-12 col-m-12"> 
+        <div class=icons>
+            <a href="https://www.facebook.com/petroglyphgames"><i class="fab fa-facebook-square"></i> Petroglyph Games</a>
+            <a href="https://www.facebook.com/SEGA"><i class="fab fa-facebook-square"></i> SEGA</a><br/>
+            <small>Logos, <em>Universe at War</em> and related content &copy; their respective owners. Site Layout &copy; Jim Lyons, 2018-2019.</small>
+        </div>    
+        </footer>
+</body>
+       </html>
